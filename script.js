@@ -20,6 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const li = document.createElement('li');
         li.textContent = taskText;
 
+        const buttonsDiv = document.createElement('div');
+        buttonsDiv.classList.add('buttons');
+
         const completeBtn = document.createElement('button');
         completeBtn.textContent = 'Complete';
         completeBtn.addEventListener('click', () => completeTask(li));
@@ -28,8 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
         deleteBtn.textContent = 'Delete';
         deleteBtn.addEventListener('click', () => deleteTask(li));
 
-        li.appendChild(completeBtn);
-        li.appendChild(deleteBtn);
+        buttonsDiv.appendChild(completeBtn);
+        buttonsDiv.appendChild(deleteBtn);
+        li.appendChild(buttonsDiv);
 
         return li;
     }
