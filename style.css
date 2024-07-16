@@ -15,10 +15,13 @@ body {
 header {
     background: #0066cc;
     color: #fff;
-    padding: 1rem;
-    width: 100%;
+    padding: 2rem;
+    width: 80%;
+    max-width: 600px;
     text-align: center;
     border-bottom: 4px solid #004080;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 main {
