@@ -35,6 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
         buttonsDiv.appendChild(deleteBtn);
         li.appendChild(buttonsDiv);
 
+        const hammer = new Hammer(li);
+        hammer.on('swiperight', () => {
+            li.classList.add('animate-swipe-right');
+            setTimeout(() => completeTask(li), 500);
+        });
+
         return li;
     }
 
