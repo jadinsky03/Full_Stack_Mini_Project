@@ -96,3 +96,17 @@ li .buttons {
     flex-direction:row;
     justify-content: end;
 }
+
+@keyframes swipeLeft {
+    0% { transform: translateX(0); opacity: 1; }
+    100% { transform: translateX(-100%); opacity: 0; }
+}
+
+@keyframes swipeRight {
+    0% { transform: translateX(0); opacity: 1; }
+    100% { transform: translateX(100%); opacity: 0; }
+}
+
+.animate-swipe-right {
+    animation: swipeRight 0.5s forwards;
+}

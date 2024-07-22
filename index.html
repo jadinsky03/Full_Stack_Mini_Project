@@ -4,26 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
 </head>
 <body>
     <header>
         <h1>To-Do List</h1>
     </header>
-    
     <main>
         <section id="todo-section">
             <h2>Add New Task</h2>
             <input type="text" id="new-task" placeholder="Enter new task">
             <button id="add-task-btn">Add Task</button>
-        </section>
-        
+        </section> 
         <section id="tasks-section">
             <h2>Tasks</h2>
             <ul id="tasks-list"></ul>
-        </section>
-        
+        </section>     
         <section id="completed-section">
             <h2>Completed Tasks</h2>
             <ul id="completed-list"></ul>
